@@ -16,7 +16,7 @@ export const goods = [
 ];
 
 export const App = () => {
-  const [selectedGood, setSelectedGood] = useState('');
+  const [selectedGood, setSelectedGood] = useState('Jam');
 
   function addProduct(goodName) {
     setSelectedGood(goodName);
@@ -29,7 +29,7 @@ export const App = () => {
   return (
     <main className="section container">
       <h1 className="title is-flex is-align-items-center">
-        {selectedGood ? `${selectedGood}` : 'No goods selected'}
+        {selectedGood ? `${selectedGood} is selected` : 'No goods selected'}
         <button
           data-cy="ClearButton"
           type="button"
